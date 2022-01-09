@@ -37,7 +37,7 @@ ora1 = int(input("Hány óra?> "))
 perc1 = int(input("Hány perc?> "))
 masodperc1 = int(input("Hány másodperc?> "))
 
-OraInSec1 = (ora1 * 60) * 60
+OraInSec1 = (ora1 * 60) * 60 #hunglish :D
 MinInSec1 = perc1 * 60
 
 result1 = OraInSec1 + MinInSec1 + masodperc1
@@ -64,12 +64,12 @@ else:
 
 num = float(input("Adj meg egy számot >"))
 
-if num % 2 == 0:
-    print("Páros")
+if num > 0:
+    print("Pozitív")
 elif num == 0:
     print("Ez nulla")
 else:
-    print("Páratlan")
+    print("Negatív")
 
 
 if num % 1 == 0:
@@ -87,7 +87,6 @@ elif fizetes > 185000 >= 270000:
     print("átlagos")
 elif fizetes > 270000:
     print("Magas")
-# ----------------------
 
 # 8 feladat  > Egy turkálóban minden póló darabja 500 Ft. Ha egy vásárlás során valaki több darabot is vesz, a második ára már csak 450 Ft, a harmadik pedig 400 Ft, de a negyedik és további darabok is ennyibe kerülnek, tehát az ár a harmadik vásárlása után már nem csökken tovább. Írj programot, amely a vásárolt pólók darabszámának ismeretében megmondja, hogy mennyit fizet a vásárló!
 
@@ -119,12 +118,19 @@ while x <= 20:
     print(x)
     x += 1
 
+# 10 feladat >Írj programot, amely hatványozni képes! Kérdezze meg az alapot (valós) és a kitevőt (egész), és írja képernyőre a hatvány értékét!
+
+alap = int(input("Add meg az alapot > "))
+kitevo = int(input("Add meg az kitevőt > "))
+
+result = alap ** kitevo
+print(result)
+
 # 11 feladat > Készíts programot, amely egy pozitív egész számról négyzetgyökvonás nélkül eldönti, hogy négyzetszám-e!
 
 num = int(input("Adj meg egy pozitív egész számot > "))
 
-i = 0
-i += num ** 0.5
+i = num ** 0.5
 
 if i**2 == num:
     print("Ez a szám négyzetszám!")
@@ -153,8 +159,10 @@ else:
     lower = num1
     upper = num2
 
+
+
 helper = lower
 while helper <= upper:
-    if helper % 2!= 0 :
+    if helper % 2 != 0:
         print(helper)
     helper += 1
