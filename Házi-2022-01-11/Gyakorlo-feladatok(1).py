@@ -91,6 +91,10 @@ elif fizetes > 270000:
 
 # 8 feladat  > Egy turkálóban minden póló darabja 500 Ft. Ha egy vásárlás során valaki több darabot is vesz, a második ára már csak 450 Ft, a harmadik pedig 400 Ft, de a negyedik és további darabok is ennyibe kerülnek, tehát az ár a harmadik vásárlása után már nem csökken tovább. Írj programot, amely a vásárolt pólók darabszámának ismeretében megmondja, hogy mennyit fizet a vásárló!
 
+
+
+
+
 # 9 feladat >Számok kiírása: Az ábrán egy program algoritmusa látható, amely kiírja a számokat 1-től 20-ig.
 
 # Gondolok egy számra, legyen ez 1.
