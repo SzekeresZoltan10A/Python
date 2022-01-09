@@ -124,9 +124,12 @@ while x <= 20:
 num = int(input("Adj meg egy pozitív egész számot > "))
 
 i = 0
+i += num ** 0.5
 
-while i*i != num:
-    i = num / 2
+if i**2 == num:
+    print("Ez a szám négyzetszám!")
+else:
+    print("Ez a szám nem négyzetszám!")
 
 # 12 feladat >Egy program bekér a felhasználótól két pozitív egész számot, és kiírja a két szám közötti összes páratlan számot. A program akkor is helyesen működik, ha a felhasználó előbb a felső, aztán az alsó határt adja meg (és fordítva is).  A program alogirtmusa a következő:
 # -----------------------------------------------------------
